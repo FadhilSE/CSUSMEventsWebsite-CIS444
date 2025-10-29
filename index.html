@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Home · CSUSM Campus Events</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Discover, RSVP, and track CSUSM campus events.">
+</head>
+<body>
+<header class="site" role="banner">
+  <div class="nav" role="navigation" aria-label="Primary">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt=""><span>CSUSM Events</span></a>
+    <nav>
+      <a href="events.html">Events</a>
+      <a href="dashboard.html">My Orders</a>
+      <a href="create_event.html">Create Event</a>
+      <a href="admin.html">Admin</a>
+      <a href="login.html" class="badge">Login</a>
+    </nav>
+  </div>
+</header>
+<main role="main">
+
+<section class="hero">
+  <div class="card">
+    <h1>Find events across CSUSM</h1>
+    <p>Browse by category, RSVP, add to cart, and check out. This phase includes UI and client-side behavior; database integration arrives next phase.</p>
+    <div style="display:flex; gap:.75rem; flex-wrap:wrap;">
+      <a class="btn" href="events.html">Browse Events</a>
+      <a class="btn ghost" href="register.html">Create an Account</a>
+    </div>
+    <p class="badge" style="margin-top:.75rem">MVP · UI Complete · DB Mocked</p>
+  </div>
+  <div class="card">
+    <h2>Quick search</h2>
+    <form id="searchForm" aria-label="Quick event search">
+      <label for="q">Keyword</label>
+      <input id="q" name="q" placeholder="e.g., hackathon, career fair">
+      <div class="form-row">
+        <div>
+          <label for="when">When</label>
+          <select id="when" name="when">
+            <option value="">Anytime</option>
+            <option value="today">Today</option>
+            <option value="weekend">This weekend</option>
+          </select>
+        </div>
+        <div>
+          <label for="type">Type</label>
+          <select id="type" name="type">
+            <option value="">All</option>
+            <option>Academic</option>
+            <option>Social</option>
+            <option>Career</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn" type="submit">Search</button>
+    </form>
+  </div>
+</section>
+<section aria-labelledby="featured">
+  <h2 id="featured">Featured</h2>
+  <div class="grid cards" id="featuredList" aria-live="polite"></div>
+</section>
+
+</main>
+<footer class="site" role="contentinfo">
+  <p>© 2025 CSUSM Campus Events · <a href="access.html">Access</a> · <a href="404.html">Error 404</a></p>
+</footer>
+<script src="assets/js/app.js" defer></script>
+
+</body>
+</html>

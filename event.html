@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Event · CSUSM Campus Events</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Discover, RSVP, and track CSUSM campus events.">
+</head>
+<body>
+<header class="site" role="banner">
+  <div class="nav" role="navigation" aria-label="Primary">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt=""><span>CSUSM Events</span></a>
+    <nav>
+      <a href="events.html">Events</a>
+      <a href="dashboard.html">My Orders</a>
+      <a href="create_event.html">Create Event</a>
+      <a href="admin.html">Admin</a>
+      <a href="login.html" class="badge">Login</a>
+    </nav>
+  </div>
+</header>
+<main role="main">
+
+<section class="card" id="eventDetail">
+  <p class="badge"><span aria-hidden="true">📍</span> <span id="evVenue">Venue</span></p>
+  <h1 id="evTitle">Event Title</h1>
+  <p id="evDate">Date TBD</p>
+  <p id="evDesc">Description pending.</p>
+  <form id="addToCart" class="form-row" aria-label="Add tickets">
+    <div><label for="qty">Qty</label><input id="qty" type="number" value="1" min="1" max="10"></div>
+    <div style="align-self:end"><button class="btn" type="submit">Add to Cart</button></div>
+  </form>
+</section>
+
+</main>
+<footer class="site" role="contentinfo">
+  <p>© 2025 CSUSM Campus Events · <a href="access.html">Access</a> · <a href="404.html">Error 404</a></p>
+</footer>
+<script src="assets/js/app.js" defer></script>
+
+</body>
+</html>

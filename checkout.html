@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout · CSUSM Campus Events</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Discover, RSVP, and track CSUSM campus events.">
+</head>
+<body>
+<header class="site" role="banner">
+  <div class="nav" role="navigation" aria-label="Primary">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt=""><span>CSUSM Events</span></a>
+    <nav>
+      <a href="events.html">Events</a>
+      <a href="dashboard.html">My Orders</a>
+      <a href="create_event.html">Create Event</a>
+      <a href="admin.html">Admin</a>
+      <a href="login.html" class="badge">Login</a>
+    </nav>
+  </div>
+</header>
+<main role="main">
+
+<section class="card">
+  <h1>Checkout</h1>
+  <form id="checkoutForm" aria-label="Checkout">
+    <div class="form-row">
+      <div><label for="addr">Address</label><input id="addr" required></div>
+      <div><label for="city">City</label><input id="city" required></div>
+      <div><label for="zip">ZIP</label><input id="zip" pattern="\d{5}" required></div>
+    </div>
+    <div class="form-row">
+      <div><label for="card">Card</label><input id="card" inputmode="numeric" pattern="\d{16}" required></div>
+      <div><label for="exp">Exp (MM/YY)</label><input id="exp" pattern="\d{2}/\d{2}" required></div>
+      <div><label for="cvv">CVV</label><input id="cvv" pattern="\d{3}" required></div>
+    </div>
+    <button class="btn" type="submit">Place order</button>
+    <p id="checkoutMsg" class="success" hidden aria-live="polite"></p>
+  </form>
+</section>
+
+</main>
+<footer class="site" role="contentinfo">
+  <p>© 2025 CSUSM Campus Events · <a href="access.html">Access</a> · <a href="404.html">Error 404</a></p>
+</footer>
+<script src="assets/js/app.js" defer></script>
+<script src='assets/js/validators.js' defer></script>
+</body>
+</html>

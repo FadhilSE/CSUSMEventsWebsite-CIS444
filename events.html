@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Events · CSUSM Campus Events</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Discover, RSVP, and track CSUSM campus events.">
+</head>
+<body>
+<header class="site" role="banner">
+  <div class="nav" role="navigation" aria-label="Primary">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt=""><span>CSUSM Events</span></a>
+    <nav>
+      <a href="events.html">Events</a>
+      <a href="dashboard.html">My Orders</a>
+      <a href="create_event.html">Create Event</a>
+      <a href="admin.html">Admin</a>
+      <a href="login.html" class="badge">Login</a>
+    </nav>
+  </div>
+</header>
+<main role="main">
+
+<section class="card">
+  <h1>Events</h1>
+  <form id="filters" class="form-row" aria-label="Filters">
+    <div><label for="kw">Keyword</label><input id="kw" name="kw" placeholder="Search"></div>
+    <div><label for="cat">Category</label><select id="cat"><option value="">All</option><option>Academic</option><option>Social</option><option>Career</option></select></div>
+    <div><label for="sort">Sort</label><select id="sort"><option value="date">Date</option><option value="title">Title</option><option value="price">Price</option></select></div>
+    <div style="align-self:end"><button class="btn" type="submit">Apply</button></div>
+  </form>
+</section>
+<section style="margin-top:1rem">
+  <div class="grid cards" id="eventList" aria-live="polite"></div>
+</section>
+
+</main>
+<footer class="site" role="contentinfo">
+  <p>© 2025 CSUSM Campus Events · <a href="access.html">Access</a> · <a href="404.html">Error 404</a></p>
+</footer>
+<script src="assets/js/app.js" defer></script>
+
+</body>
+</html>
